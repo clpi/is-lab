@@ -1,0 +1,3 @@
+[workspace]
+default-members = [ "./is-lab"]
+members = ["./is-lab", "./rwasm/bloc"]
