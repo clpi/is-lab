@@ -1,0 +1,30 @@
+[package]
+name = "is-lab"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+default-run = "is-lab"
+
+[[bin]]
+name = "is-lab"
+path = "src/main.rs"
+doctest = false
+test = false
+bench = false
+
+[[bin]]
+name = "main"
+path = "src/bin/main.rs"
+
+[lib]
+name = "is_lib"
+path = "src/lib.rs"
+doctest = false
+test = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[build-dependencies]
+criterion = "0.3.5"

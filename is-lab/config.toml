@@ -1,0 +1,6 @@
+[alias]
+b = "build"
+r = "run --bin is-lab"
+R = "run --bin main"
+t = "test"
+
