@@ -1,0 +1,3 @@
+[submodules "go-grpc"]
+    path = "./lab/go-grpc"
+    url = "https://github.com/clpi/gon.git"

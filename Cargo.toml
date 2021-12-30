@@ -1,3 +1,39 @@
+[package]
+name = "is-lab-platform"
+version = "0.1.0"
+authors = ["Chris Pecunies <clp@clp.is>"]
+about = "Just learning about auxiliary topics to the point where I feel proficient with them"
+default-run = "is-wasm"
+
+[[bin]]
+name = "is-wasm"
+path = "is-was/src/bin/main.rs"
+
+[[bin]]
+name = "is-grpc"
+path = "is-grpc/src/bin/main.rs"
+[[bin]]
+name = "is-lab"
+path = "is-grpc/src/bin/is-lab.rs"
+[[bin]]
+name = "is-net"
+path = "is-grpc/src/bin/is-net.rs"
+[[bin]]
+name = "is-proto"
+path = "is-grpc/src/bin/is-proto.rs"
+
 [workspace]
-default-members = [ "./is-lab"]
-members = ["./is-lab", "./rwasm/bloc"]
+
+default-members = [ 
+    "./is-was/Cargo.toml",
+]
+members = [
+    "./is-lab/Cargo.toml",
+    "./is-was/Cargo.toml",
+    "./is-grpc/Cargo.toml",
+    "./is-net/Cargo.toml",
+	"./is-proto/Cargo.toml"
+]
+exclude = [
+    "./is-emb/Cargo.toml",
+]
